@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vgl_test_include.dir/test_include.cxx.o  -o ../../../bin/vgl_test_include ../../../lib/libvgl.a ../../../lib/libvcl.a -lm ../../../lib/libclipper.a 

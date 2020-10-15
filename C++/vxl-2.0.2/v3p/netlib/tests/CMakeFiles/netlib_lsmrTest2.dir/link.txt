@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/netlib_lsmrTest2.dir/lsmrTest2.cxx.o  -o ../../../bin/netlib_lsmrTest2 ../../../lib/libv3p_netlib.a -lm 

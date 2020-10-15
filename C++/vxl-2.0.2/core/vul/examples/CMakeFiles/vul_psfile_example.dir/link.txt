@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vul_psfile_example.dir/vul_psfile_example.cxx.o  -o ../../../bin/vul_psfile_example ../../../lib/libvul.a ../../../lib/libvcl.a -lm 

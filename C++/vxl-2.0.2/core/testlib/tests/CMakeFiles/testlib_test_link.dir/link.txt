@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/testlib_test_link.dir/test_link.cxx.o  -o ../../../bin/testlib_test_link ../../../lib/libtestlib.a ../../../lib/libvcl.a -lm 

@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vnl_algo_test_template_include.dir/test_template_include.cxx.o  -o ../../../../bin/vnl_algo_test_template_include ../../../../lib/libvnl_algo.a ../../../../lib/libnetlib.a ../../../../lib/libv3p_netlib.a ../../../../lib/libvnl.a ../../../../lib/libvcl.a -lm 

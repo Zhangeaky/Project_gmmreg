@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vnl_amoeba.dir/vnl_amoeba.cxx.o  -o ../../../bin/vnl_amoeba ../../../lib/libvnl_algo.a ../../../lib/libvnl.a ../../../lib/libvul.a ../../../lib/libnetlib.a ../../../lib/libv3p_netlib.a ../../../lib/libvcl.a -lm 

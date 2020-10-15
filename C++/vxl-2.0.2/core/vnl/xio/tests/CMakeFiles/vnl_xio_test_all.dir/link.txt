@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vnl_xio_test_all.dir/test_driver.cxx.o CMakeFiles/vnl_xio_test_all.dir/test_vnl_xio.cxx.o  -o ../../../../bin/vnl_xio_test_all ../../../../lib/libvnl_xio.a ../../../../lib/libtestlib.a ../../../../lib/libvnl.a ../../../../lib/libvsl.a ../../../../lib/libvcl.a -lm 

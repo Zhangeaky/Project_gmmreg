@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/netlib_slamch_test.dir/slamch-test.c.o  -o ../../../bin/netlib_slamch_test ../../../lib/libv3p_netlib.a -lm 

@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vcsl_tutor.dir/vcsl_tutor.cxx.o  -o ../../../bin/vcsl_tutor ../../../lib/libvcsl.a ../../../lib/libvnl.a ../../../lib/libvbl.a ../../../lib/libvcl.a -lm 

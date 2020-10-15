@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libvpdl.a  CMakeFiles/vpdl.dir/Templates/vpdl_distribution+double.0-.cxx.o CMakeFiles/vpdl.dir/Templates/vpdl_distribution+double.1-.cxx.o CMakeFiles/vpdl.dir/Templates/vpdl_distribution+double.2-.cxx.o CMakeFiles/vpdl.dir/Templates/vpdl_distribution+double.3-.cxx.o CMakeFiles/vpdl.dir/Templates/vpdl_distribution+float.0-.cxx.o CMakeFiles/vpdl.dir/Templates/vpdl_distribution+float.1-.cxx.o CMakeFiles/vpdl.dir/Templates/vpdl_distribution+float.2-.cxx.o CMakeFiles/vpdl.dir/Templates/vpdl_distribution+float.3-.cxx.o
+/usr/bin/ranlib ../../lib/libvpdl.a

@@ -28,20 +28,29 @@ def run_rigid_pairwise(gmmreg_exe, model, scene, f_config):
     if type(model) == type('abc'):
         model = np.loadtxt(model)
         scene = np.loadtxt(scene)
+
     if model.shape[0] > 5000:
         model = downsampled_subset(model, 5000)
     if scene.shape[0] > 5000:
         scene = downsampled_subset(scene, 5000)
+
     print(model.shape)
     print(scene.shape)
+    print("TMP: ", TMP_PATH)
+
+    #降采样的结果存储在./tmp
     np.savetxt(os.path.join(TMP_PATH, 'model.txt'), model)
     np.savetxt(os.path.join(TMP_PATH, 'scene.txt'), scene)
+
+    # 'gmmreg_demo '
+    # f_config: dragon_stand.ini
     cmd = '%s %s %s'%(gmmreg_exe, f_config, 'rigid')
 
     t1 = time.time()
     subprocess.call(cmd, shell=True)
     t2 = time.time()
     print("Run time : %s seconds" % (t2 - t1))
+
     param = np.loadtxt(os.path.join(TMP_PATH, 'final_rigid.txt'))
     matrix = np.loadtxt(os.path.join(TMP_PATH, 'final_rigid_matrix.txt'))
     elasped_time_in_ms = np.loadtxt(os.path.join(TMP_PATH, 'elapsed_time_in_ms.txt'))

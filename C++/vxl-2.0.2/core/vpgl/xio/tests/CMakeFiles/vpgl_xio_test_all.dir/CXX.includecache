@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/agent/data2/zhangeaky/gmmreg/Cpp/vxl-2.0.2/core/vpgl/xio/tests/test_driver.cxx
+testlib/testlib_register.h
+-
+
+core/testlib/testlib_register.h
+string
+-
+vcl_msvc_warnings.h
+-
+
+vcl/vcl_msvc_warnings.h
+

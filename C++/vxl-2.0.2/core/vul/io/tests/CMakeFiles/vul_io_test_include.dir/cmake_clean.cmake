@@ -1,0 +1,10 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/vul_io_test_include.dir/test_include.cxx.o"
+  "../../../../bin/vul_io_test_include.pdb"
+  "../../../../bin/vul_io_test_include"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/vul_io_test_include.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

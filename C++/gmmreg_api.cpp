@@ -48,6 +48,9 @@ void print_usage() {
 #ifdef __cplusplus
 extern "C"
 #endif
+//args:
+//input_config: dragon_stand.ini
+// method: rigid
 int gmmreg_api(const char* input_config, const char* method) {
   cout << "Robust Point Set Registration Using Gaussian Mixture Models" << endl;
   cout << "Compiled on " << __DATE__ << ", " << __TIME__ << endl;
@@ -55,6 +58,13 @@ int gmmreg_api(const char* input_config, const char* method) {
   char f_config[1024];
   gmmreg::utils::get_config_fullpath(input_config, f_config);
 
+  //CreateInstance is a static member function that :
+  //create a specific object that  inherit Base class 
+  //corresponding to the "method" inputs
+
+  //gmmreg is a namespace
+  // GmmregFactory is custom class
+  // strlwr can tranform a charset to its lowercase form
   auto instance = gmmreg::GmmregFactory::CreateInstance(strlwr((char*)method));
   if (instance == nullptr) {
     print_usage();

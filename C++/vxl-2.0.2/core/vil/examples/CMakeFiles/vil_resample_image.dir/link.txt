@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vil_resample_image.dir/vil_resample_image.cxx.o  -o ../../../bin/vil_resample_image ../../../lib/libvil.a ../../../lib/libvcl.a /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib/x86_64-linux-gnu/libtiff.so -lgeotiff /usr/lib/x86_64-linux-gnu/libpng.so /usr/lib/x86_64-linux-gnu/libz.so ../../../lib/libopenjpeg2.a -lm 

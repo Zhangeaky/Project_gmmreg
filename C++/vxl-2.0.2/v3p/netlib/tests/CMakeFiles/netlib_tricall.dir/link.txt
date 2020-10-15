@@ -1,0 +1,1 @@
+/usr/bin/cc   -fPIC -O3 -DNDEBUG    CMakeFiles/netlib_tricall.dir/tricall.c.o  -o ../../../bin/netlib_tricall ../../../lib/libnetlib.a -lm 

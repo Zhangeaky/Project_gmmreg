@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vsl_test_template_include.dir/test_template_include.cxx.o  -o ../../../bin/vsl_test_template_include ../../../lib/libvsl.a ../../../lib/libtestlib.a ../../../lib/libvpl.a ../../../lib/libvsl.a ../../../lib/libvcl.a -lm 

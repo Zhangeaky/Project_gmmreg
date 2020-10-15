@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libvpgl_xio.a  CMakeFiles/vpgl_xio.dir/vpgl_xio_lvcs.cxx.o
+/usr/bin/ranlib ../../../lib/libvpgl_xio.a

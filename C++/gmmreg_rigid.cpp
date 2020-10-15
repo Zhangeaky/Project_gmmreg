@@ -68,22 +68,27 @@ void SetRigidTransformBound(const int d, vnl_lbfgsb* minimizer) {
     upper_bound.fill(0);
     upper_bound[2] = kPi;
   } else if (d == 3) {
+
     nbd.set_size(7);  // ((q1*i + q2*j + q3*k + q4), (dx, dy, dz))
     nbd.fill(0);
     for (int i = 0; i < 4; ++i) {
       nbd[i] = 2;  // quaternion part has both lower and upper bounds
     }
+
     lower_bound.set_size(7);
     lower_bound.fill(0);
     for (int i = 0; i < 4; ++i) {
       lower_bound[i] = -1;
     }
+
+
     upper_bound.set_size(7);
     upper_bound.fill(0);
     for (int i = 0; i < 4; ++i) {
       upper_bound[i] = 1;
     }
   }
+
   minimizer->set_bound_selection(nbd);
   minimizer->set_lower_bound(lower_bound);
   minimizer->set_upper_bound(upper_bound);
@@ -91,16 +96,28 @@ void SetRigidTransformBound(const int d, vnl_lbfgsb* minimizer) {
 
 void RigidRegistration::StartRegistration(vnl_vector<double>& params) {
   vnl_lbfgsb minimizer(*func_);
+  //set up bound of quaternion -1 1 dx dy dz
   SetRigidTransformBound(this->d_, &minimizer);
+  //pass the part of Base 
+  //get m_
+  //get d_
+  //generate gradient_ 
   func_->SetBase(this);
+
+  //level_read from the config file which is 1
   for (unsigned int k = 0; k < this->level_; ++k) {
     func_->SetScale(this->v_scale_[k]);
+    
+    //pass param_rigid to params
+    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     SetParam(params);
     minimizer.set_max_function_evals(this->v_func_evals_[k]);
     minimizer.set_f_tolerance(1e-7);
     minimizer.set_x_tolerance(1e-5);
     // For more options, see
     // https://public.kitware.com/vxl/doc/release/core/vnl/html/vnl__nonlinear__minimizer_8h_source.html
+    
+
     minimizer.minimize(params);
     if (minimizer.get_failure_code() < 0) {
       break;
@@ -115,8 +132,11 @@ void RigidRegistration::StartRegistration(vnl_vector<double>& params) {
 
 int RigidRegistration::SetInitParams(const char* f_config) {
   char f_init_rigid[80] = {0};
+  // section_ : "GMMREG_OPT"
   GetPrivateProfileString(this->section_, "init_rigid", NULL, f_init_rigid, 80,
                           f_config);
+
+  //set up the value of param_rigid_
   SetInitRigid(f_init_rigid);
   return 0;
 }
@@ -129,6 +149,7 @@ int RigidRegistration::SetInitRigid(const char* filename) {
     param_rigid_[0] = 0;
     param_rigid_[1] = 0;
     param_rigid_[2] = 0;
+    //we got here
   } else if (this->d_ == 3) {
     param_rigid_.set_size(7);
     param_rigid_.fill(0);
@@ -150,6 +171,7 @@ void RigidRegistration::PerformTransform(const vnl_vector<double>& x) {
   ConvertParamToRotationAndTranslation(x, this->d_, rotation, translation);
   this->transformed_model_ =
       this->model_ * rotation.transpose() + ones * translation;
+      
   this->param_rigid_ = x;
 }
 

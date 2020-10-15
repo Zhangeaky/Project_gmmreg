@@ -24,8 +24,10 @@ double RigidFunc::f(const vnl_vector<double>& x) {
                          scale_, gradient_);
 #else
   double energy = GaussTransform(base_->transformed_model_, base_->scene_,
-                                 scale_, gradient_);
+                               scale_, gradient_);
 #endif
+
+
   return Eval(energy, &gradient_);
 }
 

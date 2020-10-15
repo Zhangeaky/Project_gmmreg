@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/testlib_test_all.dir/test_driver.cxx.o CMakeFiles/testlib_test_all.dir/test_assert.cxx.o CMakeFiles/testlib_test_all.dir/test_macros.cxx.o CMakeFiles/testlib_test_all.dir/test_args.cxx.o CMakeFiles/testlib_test_all.dir/test_root_dir.cxx.o  -o ../../../bin/testlib_test_all ../../../lib/libtestlib.a ../../../lib/libvcl.a -lm 

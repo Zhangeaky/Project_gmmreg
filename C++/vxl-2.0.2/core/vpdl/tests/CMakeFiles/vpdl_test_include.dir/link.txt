@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vpdl_test_include.dir/test_include.cxx.o  -o ../../../bin/vpdl_test_include ../../../lib/libvpdl.a ../../../lib/libvnl_algo.a ../../../lib/libnetlib.a ../../../lib/libv3p_netlib.a ../../../lib/libvnl.a ../../../lib/libvcl.a -lm 

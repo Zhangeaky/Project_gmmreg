@@ -84,18 +84,26 @@ struct NanoflannTree {
 };
 
 template <typename T>
+// T: double 
+//tree:
+//moving:
+//gradient: 
 T FastGaussTransform(const NanoflannTree<T>& tree, const PointCloud<T>& moving,
                      T scale, vnl_matrix<T>& gradient) {
+
   T* grad = gradient.data_block();
 
   int m = moving.rows();
   int dim = moving.cols();
 
   T cross_term = 0;
+  
   #pragma omp parallel for
+  //set every point a value 0 in the 1d array 
   for (int i = 0; i < m * dim; ++i) {
     grad[i] = 0;
   }
+
   const T* A = moving.data_block();
   const T* B = tree.matrix_adaptor.derived().data_block();
   int n = tree.matrix_adaptor.derived().rows();

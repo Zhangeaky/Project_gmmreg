@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/netlib_lbfgsb_example.dir/lbfgsb-example1.c.o  -o ../../../bin/netlib_lbfgsb_example ../../../lib/libv3p_netlib.a -lm 

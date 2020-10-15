@@ -14,6 +14,7 @@ from common_utils import *
 # https://github.com/bistromath/gr-air-modes/blob/master/python/Quaternion.py
 from Quaternion import Quat, normalize
 
+
 DATA_PATH = '../data/dragon_stand'
 CONFIG_FILE = './dragon_stand.ini'
 
@@ -48,6 +49,7 @@ def ply2txt(plyfile):
 def run_rigid_batch(step, res):
     for i in range(15):
         j = (i + step) % 15
+        print("i: ", i, "j: ", j)
         model_ply = PLY_FILES[i]
         scene_ply = PLY_FILES[j]
         model_txt = ply2txt(model_ply)
@@ -58,6 +60,7 @@ def run_rigid_batch(step, res):
 
 
 def lookup_ground_truth(i, j):
+    print("look_ground_truth")
     model_ply = PLY_FILES[i]
     scene_ply = PLY_FILES[j]
     pos_i = GT_POS[os.path.basename(model_ply)]
@@ -88,10 +91,12 @@ def compute_accuracy(reg_result):
 
 # Run pair-wise registrations, record errors and run time.
 def main():
+    print("main entry")
     errors = {}
     total_run_times = {}
     core_run_times = {}
     for step in [1]:
+        print("step: ", step)
         reg_result = {}
         reg_result = run_rigid_batch(step, reg_result)
         reg_result = run_rigid_batch(-step, reg_result)
@@ -131,16 +136,29 @@ def visualize_registration(i, j):
     scene_txt = ply2txt(scene_ply)
     model = np.loadtxt(model_txt)
     scene = np.loadtxt(scene_txt)
-    print(model_txt, scene_txt)
+    print("tpye_model :", type(model), "type_scence: ", type(scene))
+
+    print("fileUrl:",model_txt, scene_txt)#文件路径
     pcloud_model = PointCloud()
     pcloud_model.points = Vector3dVector(model)
     pcloud_model.paint_uniform_color([1, 0, 0]) # red
+
     pcloud_scene = PointCloud()
     pcloud_scene.points = Vector3dVector(scene)
     pcloud_scene.paint_uniform_color([0, 1, 0]) # green
+
     draw_geometries([pcloud_model, pcloud_scene])
+
     res = run_rigid_pairwise(BINARY_FULLPATH, model, scene, CONFIG_FILE)
-    print(res)
+
+    print("bp", BINARY_FULLPATH)
+    # BINARY_FULLPATH:
+    # ../C++/build/gmmreg_demo
+
+    print("CFG FILE:", CONFIG_FILE)
+    # dragon_stand.ini
+    print("result: ", res)
+
     transformed = np.loadtxt(os.path.join(TMP_PATH, 'transformed_model.txt'))
     pcloud_transformed = PointCloud()
     pcloud_transformed.points = Vector3dVector(transformed)
@@ -152,9 +170,11 @@ import sys
 if __name__ == "__main__":
     # Register just one pair, visualize point clouds before/after alignment.
     try:
+        print("visualization")
         import open3d
-        visualize_registration(0, 1)
+        visualize_registration(2,5)
+        print("-----")
     except:
         pass
     # Run registration on many more specified pairs and collect metrics.
-    main()
+    #main()

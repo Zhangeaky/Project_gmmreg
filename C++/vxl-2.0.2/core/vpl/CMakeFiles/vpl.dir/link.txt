@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libvpl.a  CMakeFiles/vpl.dir/vpl.cxx.o CMakeFiles/vpl.dir/vpl_fdopen.cxx.o CMakeFiles/vpl.dir/vpl_fileno.cxx.o
+/usr/bin/ranlib ../../lib/libvpl.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libvcl.a  CMakeFiles/vcl.dir/vcl_deprecated.cxx.o
+/usr/bin/ranlib ../lib/libvcl.a

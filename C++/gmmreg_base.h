@@ -7,7 +7,7 @@
 #include "port_ini.h"
 #endif
 
-#include <memory>
+#include <memory>tr
 #include <vector>
 #include <vnl/vnl_vector.h>
 #include <vnl/vnl_matrix.h>
@@ -39,10 +39,25 @@ class Base {
   /* s: # of points in scene */
   /* n: # of points in ctrl_pts */
   /* d: dimensionality, e.g. 2 for 2D points, 3 for 3D points */
-  int m_, n_, s_, d_;
+  int 
+  //point numbers of model
+  m_, 
+  
+  n_, 
+  //scene point numbers
+  s_, 
+  //point demension of model
+  d_;
 
   // each row is a sample point
-  vnl_matrix<double> model_, scene_, ctrl_pts_, transformed_model_;
+  vnl_matrix<double> 
+  //source point sets
+  model_, 
+  //target pointsets
+  scene_, 
+  ctrl_pts_, 
+  transformed_model_;
+  
 #ifdef USE_KDTREE
   std::unique_ptr<NanoflannTree<double>> model_tree_;
   std::unique_ptr<NanoflannTree<double>> scene_tree_;
@@ -50,6 +65,8 @@ class Base {
 
   double sigma_, lambda_;
   vnl_matrix<double> kernel_;
+
+  //from the config file dragon_stand.ini
   int b_normalize_;
   vnl_vector<double> model_centroid_, scene_centroid_;
   char section_[80], common_section_[80];

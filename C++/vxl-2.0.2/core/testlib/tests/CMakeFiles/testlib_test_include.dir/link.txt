@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/testlib_test_include.dir/test_include.cxx.o  -o ../../../bin/testlib_test_include ../../../lib/libtestlib.a ../../../lib/libvcl.a -lm 

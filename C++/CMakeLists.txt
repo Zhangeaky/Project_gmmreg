@@ -6,7 +6,7 @@ ENDIF(COMMAND cmake_policy)
 PROJECT(GMMREG)
 SET(CMAKE_CXX_STANDARD 11)
 SET(CMAKE_POSITION_INDEPENDENT_CODE ON)
-
+SET(VXL_DIR /media/agent/data2/zhangeaky/gmmreg/Cpp/vxl-2.0.2/config/cmake/Modules)
 # Set a default build type if none was specified
 set(default_build_type "Release")
 if(NOT CMAKE_BUILD_TYPE AND NOT WIN32)
@@ -20,6 +20,7 @@ endif()
 
 SET(GCC_FASTMATH_FLAGS "-ffast-math -funsafe-math-optimizations -msse4.2")
 SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_FASTMATH_FLAGS}")
+#SET(CMAKE_MODULE_PATH "/home/zhangeaky/gmmreg/C++/vxl-1.11.0/config/cmake/Modules")
 
 # The CMake command FIND_PACKAGE(VXL) attempts to find VXL binary
 # installation.  CMake will look in the directory specified by the
@@ -28,8 +29,10 @@ SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_FASTMATH_FLAGS}")
 # chance to set the variable VXL_DIR and reconfigure.  VXL_DIR now
 # replaces VXL_BINARY_PATH.
 
+#SET(VXL_DIR /home/zhangeaky/gmmreg/C++/vxl-1.11.0/config/cmake/Modules)
+message("${VXL_DIR}")
 FIND_PACKAGE(VXL)
-
+message("${VXL_FOUND}")
 # Whether FIND_PACKAGE(VXL) worked is stored in the variable
 # VXL_FOUND.  If VXL was found we then include `UseVXL.cmake'
 # which will set many variables prefixed with VXL_ that your project
@@ -38,6 +41,7 @@ FIND_PACKAGE(VXL)
 # CMake needs to use VXL.
 
 IF(VXL_FOUND)
+message("!!!!!!!!")
   INCLUDE(${VXL_CMAKE_DIR}/UseVXL.cmake)
 ENDIF(VXL_FOUND)
 

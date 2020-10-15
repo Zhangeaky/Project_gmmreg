@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/agent/data2/zhangeaky/gmmreg/Cpp/vxl-2.0.2/core/vnl/examples/calculate.cxx
+iostream
+-
+vnl/vnl_decnum.h
+-
+
+core/vnl/vnl_decnum.h
+iostream
+-
+string
+-
+utility
+-
+vnl/vnl_export.h
+core/vnl/vnl/vnl_export.h
+vcl_msvc_warnings.h
+-
+
+core/vnl/vnl_export.h
+
+vcl/vcl_msvc_warnings.h
+

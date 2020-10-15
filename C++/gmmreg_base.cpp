@@ -21,6 +21,7 @@ typedef std::chrono::high_resolution_clock::time_point TimeVar;
 
 
 void Base::Run(const char* f_config) {
+  
   Initialize(f_config);
   vnl_vector<double> params;
   TimeVar t1 = time_now();
@@ -31,29 +32,53 @@ void Base::Run(const char* f_config) {
   SaveResults(f_config, params);
 }
 
+// set up some arguments read from config file
 int Base::Initialize(const char* f_config) {
+
+  //load point sets data 
+  //assign the values of member attributes m_ s_ d_
   if (PrepareInput(f_config) < 0) {
     return -1;
   }
+
+  // This is a pure virtual function
+  // we use the edition from gmmreg_rigid.cpp
+  // set value of param_rigid from class rigidRegistration
   SetInitParams(f_config);
+
+  //from the .ini file to get the normalize value
+  // put the point sets in vnl_marix form to a kdtree container
   PrepareCommonOptions(f_config);
+
+ 
   PrepareOwnOptions(f_config);
   TimeVar t1 = time_now();
+
+   // a blank body function
   PrepareBasisKernel();
+
   initialization_time_in_ms_ = duration(time_now() - t1) / 1000.0;
   std::cout << "Init took " << initialization_time_in_ms_ << " milliseconds."
       << std::endl;
   return 0;
 }
 
+
 int Base::PrepareInput(const char* f_config) {
   char f_model[256] = {0}, f_scene[256] = {0};
+  
+  //read and get string from dragon_stand.ini
   GetPrivateProfileString(common_section_, "model", NULL,
       f_model, 256, f_config);
+  // f_model:./temp/model.txt
+  
+  // load the point clouds data store in txt file in a vnl matrix
   if (LoadMatrixFromTxt(f_model, model_) < 0) {
     return -1;
   }
 
+
+// load scene pointsets 
   GetPrivateProfileString(common_section_, "scene", NULL,
       f_scene, 256, f_config);
   if (LoadMatrixFromTxt(f_scene, scene_) < 0) {
@@ -63,6 +88,7 @@ int Base::PrepareInput(const char* f_config) {
   m_ = model_.rows();
   d_ = model_.cols();
   transformed_model_.set_size(m_, d_);
+
   s_ = scene_.rows();
   assert(scene_.cols() == d_);
 
@@ -162,6 +188,8 @@ void Base::SaveTransformed(const char* filename,
 }
 
 void Base::PrepareCommonOptions(const char* f_config) {
+
+  //get a int vlaue from dragon_stand.ini file, which is 0
   b_normalize_ = GetPrivateProfileInt(section_, "normalize", 1, f_config);
   if (b_normalize_) {
     Normalize(model_, model_centroid_, model_scale_);

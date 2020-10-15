@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/agent/data2/zhangeaky/gmmreg/Cpp/vxl-2.0.2/core/vul/examples/expand_path.cxx
+iostream
+-
+vcl_msvc_warnings.h
+-
+vul/vul_expand_path.h
+-
+
+core/vul/vul_expand_path.h
+string
+-
+vcl_msvc_warnings.h
+-
+vxl_config.h
+-
+
+core/vxl_config.h
+
+vcl/vcl_msvc_warnings.h
+

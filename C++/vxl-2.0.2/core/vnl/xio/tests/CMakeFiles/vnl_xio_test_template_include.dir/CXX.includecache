@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/agent/data2/zhangeaky/gmmreg/Cpp/vxl-2.0.2/core/vnl/xio/tests/test_template_include.cxx
+

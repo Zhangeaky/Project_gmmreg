@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vnl_xio_test_template_include.dir/test_template_include.cxx.o  -o ../../../../bin/vnl_xio_test_template_include ../../../../lib/libvnl_xio.a ../../../../lib/libvnl.a ../../../../lib/libvsl.a ../../../../lib/libvcl.a -lm 

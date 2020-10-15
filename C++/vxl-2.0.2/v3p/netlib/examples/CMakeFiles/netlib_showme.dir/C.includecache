@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/agent/data2/zhangeaky/gmmreg/Cpp/vxl-2.0.2/v3p/netlib/examples/showme.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+X11/Xlib.h
+-
+X11/Xutil.h
+-
+X11/Xatom.h
+-
+

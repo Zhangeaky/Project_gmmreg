@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vbl_smart_ptr_example.dir/vbl_smart_ptr_example.cxx.o  -o ../../../bin/vbl_smart_ptr_example ../../../lib/libvbl_example_templates.a ../../../lib/libvbl.a ../../../lib/libvcl.a -lm 

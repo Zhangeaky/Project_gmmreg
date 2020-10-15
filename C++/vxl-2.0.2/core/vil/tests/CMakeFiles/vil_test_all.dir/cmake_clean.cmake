@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/vil_test_all.dir/test_driver.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_image_resource.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_blocked_image_resource.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_image_view.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_memory_chunk.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_pixel_format.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_pyramid_image_resource.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_border.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_round.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_pyramid_image_view.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_file_format_read.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_save_load_image.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_image_loader_robustness.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_stream.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_image_list.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_4_plane_tiff.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_deep_copy_3_plane.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_image_view_maths.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_convert.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_rotate_image.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_warp.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_bilin_interp.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_sample_profile_bilin.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_sample_grid_bilin.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_resample_bilin.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_bicub_interp.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_sample_profile_bicub.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_sample_grid_bicub.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_resample_bicub.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_nearest_interp.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_resample_nearest.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_math_value_range.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_math_median.cxx.o"
+  "CMakeFiles/vil_test_all.dir/test_na.cxx.o"
+  "../../../bin/vil_test_all.pdb"
+  "../../../bin/vil_test_all"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/vil_test_all.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

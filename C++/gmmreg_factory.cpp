@@ -11,7 +11,10 @@
 namespace gmmreg {
 
 std::unique_ptr<Base> GmmregFactory::CreateInstance(const std::string& name) {
+  //create an object using polymorphism;
   Base * instance = nullptr;
+
+  //specify the object by the input lowercase method name 
   if (name == "em_tps") {
     instance = new CoherentPointDriftTps();
   } else if (name == "em_grbf") {
@@ -25,6 +28,8 @@ std::unique_ptr<Base> GmmregFactory::CreateInstance(const std::string& name) {
   } else if (name == "grbf_kc") {
     instance = new GrbfRegistration_KC();
   } else if (name == "rigid") {
+
+    //the way that python scripts dragon_stand.py uses
     instance = new RigidRegistration();
   }
   if (instance != nullptr) {

@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vgl_xio_test_template_include.dir/test_template_include.cxx.o  -o ../../../../bin/vgl_xio_test_template_include ../../../../lib/libvgl_xio.a ../../../../lib/libvgl.a ../../../../lib/libclipper.a ../../../../lib/libvsl.a ../../../../lib/libvcl.a -lm 

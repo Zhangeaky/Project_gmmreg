@@ -1,0 +1,1 @@
+/usr/bin/cc   -fPIC -O3 -DNDEBUG    CMakeFiles/netlib_showme.dir/showme.c.o  -o ../../../bin/netlib_showme ../../../lib/libnetlib.a /usr/lib/x86_64-linux-gnu/libSM.so /usr/lib/x86_64-linux-gnu/libICE.so /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so -lm 

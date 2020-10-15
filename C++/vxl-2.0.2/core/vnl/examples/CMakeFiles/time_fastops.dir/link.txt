@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/time_fastops.dir/time_fastops.cxx.o  -o ../../../bin/time_fastops ../../../lib/libvnl_algo.a ../../../lib/libvnl.a ../../../lib/libvul.a ../../../lib/libnetlib.a ../../../lib/libv3p_netlib.a ../../../lib/libvcl.a -lm 

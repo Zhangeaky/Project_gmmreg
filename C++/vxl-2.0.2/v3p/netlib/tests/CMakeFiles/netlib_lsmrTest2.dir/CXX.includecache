@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/agent/data2/zhangeaky/gmmreg/Cpp/vxl-2.0.2/v3p/netlib/tests/lsmrTest2.cxx
+linalg/lsmrDense.h
+/media/agent/data2/zhangeaky/gmmreg/Cpp/vxl-2.0.2/v3p/netlib/tests/linalg/lsmrDense.h
+iostream
+-
+cstdlib
+-
+cmath
+-
+
+v3p/netlib/linalg/lsmrBase.h
+iosfwd
+-
+
+v3p/netlib/linalg/lsmrDense.h
+lsmrBase.h
+v3p/netlib/linalg/lsmrBase.h
+

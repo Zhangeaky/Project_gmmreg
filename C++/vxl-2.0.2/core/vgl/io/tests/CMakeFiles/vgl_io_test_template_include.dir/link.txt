@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vgl_io_test_template_include.dir/test_template_include.cxx.o  -o ../../../../bin/vgl_io_test_template_include ../../../../lib/libvgl_io.a ../../../../lib/libvgl.a ../../../../lib/libclipper.a ../../../../lib/libvsl.a ../../../../lib/libvcl.a -lm 

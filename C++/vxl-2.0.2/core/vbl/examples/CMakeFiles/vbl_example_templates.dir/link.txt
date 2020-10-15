@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libvbl_example_templates.a  CMakeFiles/vbl_example_templates.dir/Templates/smartptr-instances.cxx.o
+/usr/bin/ranlib ../../../lib/libvbl_example_templates.a

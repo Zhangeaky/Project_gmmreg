@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vnl_sparse_matrix_example.dir/vnl_sparse_matrix_example.cxx.o  -o ../../../bin/vnl_sparse_matrix_example ../../../lib/libvnl_algo.a ../../../lib/libvnl.a ../../../lib/libvul.a ../../../lib/libnetlib.a ../../../lib/libv3p_netlib.a ../../../lib/libvcl.a -lm 

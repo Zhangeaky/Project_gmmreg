@@ -17,6 +17,7 @@ class RigidRegistration: public Base {
   }
 
  private:
+ 
   vnl_vector<double> param_rigid_;
   RigidFunc* func_;
 

@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -DNDEBUG    CMakeFiles/vul_io_test_include.dir/test_include.cxx.o  -o ../../../../bin/vul_io_test_include ../../../../lib/libvul_io.a ../../../../lib/libvul.a ../../../../lib/libvsl.a ../../../../lib/libvcl.a -lm 

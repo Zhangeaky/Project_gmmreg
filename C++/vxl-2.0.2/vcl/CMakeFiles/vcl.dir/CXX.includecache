@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/agent/data2/zhangeaky/gmmreg/Cpp/vxl-2.0.2/vcl/vcl_deprecated.cxx
+iostream
+-
+cstdlib
+-
+vcl_deprecated.h
+/media/agent/data2/zhangeaky/gmmreg/Cpp/vxl-2.0.2/vcl/vcl_deprecated.h
+
+/media/agent/data2/zhangeaky/gmmreg/Cpp/vxl-2.0.2/vcl/vcl_deprecated.h
+vcl_compiler_detection.h
+-
+
+vcl/compilers/VXL_COMPILER_INFO_AppleClang_CXX.h
+
+vcl/compilers/VXL_COMPILER_INFO_Clang_CXX.h
+
+vcl/compilers/VXL_COMPILER_INFO_GNU_CXX.h
+
+vcl/compilers/VXL_COMPILER_INFO_Intel_CXX.h
+
+vcl/compilers/VXL_COMPILER_INFO_MSVC_CXX.h
+
+vcl/compilers/VXL_COMPILER_INFO_SunPro_CXX.h
+
+vcl/vcl_compiler_detection.h
+compilers/VXL_COMPILER_INFO_AppleClang_CXX.h
+vcl/compilers/VXL_COMPILER_INFO_AppleClang_CXX.h
+compilers/VXL_COMPILER_INFO_Clang_CXX.h
+vcl/compilers/VXL_COMPILER_INFO_Clang_CXX.h
+compilers/VXL_COMPILER_INFO_GNU_CXX.h
+vcl/compilers/VXL_COMPILER_INFO_GNU_CXX.h
+compilers/VXL_COMPILER_INFO_MSVC_CXX.h
+vcl/compilers/VXL_COMPILER_INFO_MSVC_CXX.h
+compilers/VXL_COMPILER_INFO_SunPro_CXX.h
+vcl/compilers/VXL_COMPILER_INFO_SunPro_CXX.h
+compilers/VXL_COMPILER_INFO_Intel_CXX.h
+vcl/compilers/VXL_COMPILER_INFO_Intel_CXX.h
+
