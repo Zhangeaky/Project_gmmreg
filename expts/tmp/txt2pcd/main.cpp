@@ -22,7 +22,7 @@ int main(int argc,char** argv)
 	FILE *fp_txt;
 	TXT_Point_XYZ txt_points;
 	vector<TXT_Point_XYZ> my_vTxtPoints;
-	fp_txt = fopen("/home/zhangeaky/code/gmmreg/expts/tmp/transformed_model.txt","r");
+	fp_txt = fopen("transformed_model.txt","r");
  
 	if (fp_txt)
 	{
@@ -48,7 +48,7 @@ int main(int argc,char** argv)
 		cloud->points[i].y = my_vTxtPoints[i].y;
 		cloud->points[i].z = my_vTxtPoints[i].z;
 	}
-	pcl::io::savePCDFileASCII("test_pcd.pcd", *cloud);
+	pcl::io::savePCDFileASCII("res.pcd", *cloud);
 	cout<< "从 txt_pcd.txt读取" << cloud->points.size() << "点写入txt_pcd.pcd" << endl;
 	
 	//打印出写入的点

@@ -10,6 +10,8 @@ void Normalize(vnl_matrix<T>& x, vnl_vector<T>& centroid, T& scale) {
   centroid.set_size(d);
 
   vnl_vector<T> col;
+  
+  //求点云的中心点
 #pragma omp for
   for (int i = 0; i < d; ++i) {
     col = x.get_column(i);

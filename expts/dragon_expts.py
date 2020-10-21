@@ -33,9 +33,9 @@ def load_dragon_conf(data_path):
 GT_POS = load_dragon_conf(DATA_PATH)
 
 def get_all_plyfiles(data_path):
-    ind = range(0, 360, 24)
+    ind = range(1, 24)
     return [os.path.join(data_path,
-                         'dragonStandRight_%d.ply'%j) for j in ind]
+                         'v%d.ply'%j) for j in ind]
 
 
 PLY_FILES = get_all_plyfiles(DATA_PATH)
@@ -130,6 +130,7 @@ def visualize_registration(i, j):
         from open3d.visualization import draw_geometries
     except:
         from open3d import PointCloud, Vector3dVector, draw_geometries
+    print("hello")
     model_ply = PLY_FILES[i]
     scene_ply = PLY_FILES[j]
     model_txt = ply2txt(model_ply)
@@ -172,7 +173,7 @@ if __name__ == "__main__":
     try:
         print("visualization")
         import open3d
-        visualize_registration(0,1)
+        visualize_registration(19, 20)
         print("-----")
     except:
         pass

@@ -95,6 +95,7 @@ void SetRigidTransformBound(const int d, vnl_lbfgsb* minimizer) {
 }
 
 void RigidRegistration::StartRegistration(vnl_vector<double>& params) {
+  //创建优化器对象
   vnl_lbfgsb minimizer(*func_);
   //set up bound of quaternion -1 1 dx dy dz
   SetRigidTransformBound(this->d_, &minimizer);
@@ -103,13 +104,12 @@ void RigidRegistration::StartRegistration(vnl_vector<double>& params) {
   //get d_
   //generate gradient_ 
   func_->SetBase(this);
-
   //level_read from the config file which is 1
   for (unsigned int k = 0; k < this->level_; ++k) {
     func_->SetScale(this->v_scale_[k]);
-    
-    //pass param_rigid to params
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    //初始化函数参数，参数传入时未定义
+    //将属性param_rigid(0 0 0 1 0 0 0)传给params
     SetParam(params);
     minimizer.set_max_function_evals(this->v_func_evals_[k]);
     minimizer.set_f_tolerance(1e-7);
@@ -117,11 +117,12 @@ void RigidRegistration::StartRegistration(vnl_vector<double>& params) {
     // For more options, see
     // https://public.kitware.com/vxl/doc/release/core/vnl/html/vnl__nonlinear__minimizer_8h_source.html
     
-
+    //找到params的最小值
     minimizer.minimize(params);
     if (minimizer.get_failure_code() < 0) {
       break;
     }
+    //计算函数值
     double fxval = func_->f(params);
     std::cout << "Cost function minimized to " << fxval << std::endl
               << "# of iterations: " << minimizer.get_num_iterations() << ", "

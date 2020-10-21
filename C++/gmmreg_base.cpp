@@ -25,6 +25,7 @@ void Base::Run(const char* f_config) {
   Initialize(f_config);
   vnl_vector<double> params;
   TimeVar t1 = time_now();
+  
   StartRegistration(params);
   elapsed_time_in_ms_ = duration(time_now() - t1) / 1000.0;
   std::cout << "Registration took " << elapsed_time_in_ms_ << " milliseconds."
@@ -50,7 +51,6 @@ int Base::Initialize(const char* f_config) {
   // put the point sets in vnl_marix form to a kdtree container
   PrepareCommonOptions(f_config);
 
- 
   PrepareOwnOptions(f_config);
   TimeVar t1 = time_now();
 

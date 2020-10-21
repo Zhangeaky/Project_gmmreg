@@ -84,18 +84,12 @@ struct NanoflannTree {
 };
 
 template <typename T>
-// T: double 
-//tree:
-//moving:
-//gradient: 
 T FastGaussTransform(const NanoflannTree<T>& tree, const PointCloud<T>& moving,
                      T scale, vnl_matrix<T>& gradient) {
-
+  
   T* grad = gradient.data_block();
-
   int m = moving.rows();
   int dim = moving.cols();
-
   T cross_term = 0;
   
   #pragma omp parallel for
@@ -118,20 +112,30 @@ T FastGaussTransform(const NanoflannTree<T>& tree, const PointCloud<T>& moving,
   params.sorted = false;
 
   #pragma omp parallel for reduction(+ : cross_term)
+  //遍历moving点云
   for (int j = 0; j < m; ++j) {
+    //存入指定的邻域中的点的下标和距离
     std::vector<std::pair<size_t, T>> indices_distances;
-    indices_distances.reserve(unsigned(n));
 
+    indices_distances.reserve(unsigned(n));
+    
+    // 查找一个点在指定的领域内邻进点
     size_t nfound =
         tree.tree.radiusSearch(&A[j * dim], r2, indices_distances, params);
     T cost_ij = 0;
+
+    //遍历每一个邻域内的点
     for (size_t i = 0; i < nfound; ++i) {
       const auto entry = indices_distances[i];
+      //e的cost_ij次方
       cost_ij = std::exp(-entry.second * inv_h2);
+      
+      //计算梯度
       for (int d = 0; d < dim; ++d) {
         grad[j * dim + d] -=
             cost_ij * 2.0 * (A[j * dim + d] - B[entry.first * dim + d]);
       }
+
       cross_term += cost_ij;
     }
   }
@@ -142,6 +146,7 @@ T FastGaussTransform(const NanoflannTree<T>& tree, const PointCloud<T>& moving,
   for (int i = 0; i < m * dim; ++i) {
     grad[i] *= inv_h2;
   }
+  //函数值
   return cross_term / (m * n);
 }
 

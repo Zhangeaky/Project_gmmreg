@@ -13,10 +13,11 @@ namespace gmmreg {
 double RigidFunc::Eval(const double& f, vnl_matrix<double>* g) {
   // L2 version and KC version are equivalent in the rigid case.
   *g = -*g;
-  return -f;
+  return -f;  
 }
 
 double RigidFunc::f(const vnl_vector<double>& x) {
+  //将四元数转化为旋转矩阵和平移矩阵
   base_->PerformTransform(x);
 #ifdef USE_KDTREE
   double energy =
@@ -26,8 +27,6 @@ double RigidFunc::f(const vnl_vector<double>& x) {
   double energy = GaussTransform(base_->transformed_model_, base_->scene_,
                                scale_, gradient_);
 #endif
-
-
   return Eval(energy, &gradient_);
 }
 
