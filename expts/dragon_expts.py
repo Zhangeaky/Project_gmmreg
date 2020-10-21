@@ -172,7 +172,7 @@ if __name__ == "__main__":
     try:
         print("visualization")
         import open3d
-        visualize_registration(2,5)
+        visualize_registration(0,1)
         print("-----")
     except:
         pass
