@@ -3,67 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="09935ed9-d64c-463a-a92b-26e806d26747" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C++/fgt_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/C++/fgt_utils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C++/gmmreg_base.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/C++/gmmreg_base.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C++/gmmreg_rigid.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/C++/gmmreg_rigid.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C++/gmmreg_rigid_func.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/C++/gmmreg_rigid_func.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C++/utils/normalization_utils.cc" beforeDir="false" afterPath="$PROJECT_DIR$/C++/utils/normalization_utils.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/pcd2txt.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/pcd2txt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_0.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_120.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_120.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_144.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_144.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_168.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_168.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_192.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_192.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_216.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_216.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_24.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_24.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_240.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_240.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_264.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_264.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_288.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_288.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_312.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_312.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_336.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_336.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_360.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_360.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_384.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_384.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_408.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_408.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_432.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_432.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_456.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_456.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_48.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_48.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_480.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_480.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_504.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_504.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_528.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_528.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_552.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_552.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_72.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_72.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_96.ply" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dragon_stand/dragonStandRight_96.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dragon_stand/sum/main.cc" beforeDir="false" afterPath="$PROJECT_DIR$/data/dragon_stand/sum/main.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expts/common_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/expts/common_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expts/dragon_expts.py" beforeDir="false" afterPath="$PROJECT_DIR$/expts/dragon_expts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expts/dragon_stand.ini" beforeDir="false" afterPath="$PROJECT_DIR$/expts/dragon_stand.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expts/tmp/elapsed_time_in_ms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/expts/tmp/elapsed_time_in_ms.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expts/tmp/final_rigid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/expts/tmp/final_rigid.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expts/tmp/final_rigid_matrix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/expts/tmp/final_rigid_matrix.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expts/tmp/model.txt" beforeDir="false" afterPath="$PROJECT_DIR$/expts/tmp/model.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expts/tmp/res.pcd" beforeDir="false" afterPath="$PROJECT_DIR$/expts/tmp/res.pcd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expts/tmp/scene.txt" beforeDir="false" afterPath="$PROJECT_DIR$/expts/tmp/scene.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expts/tmp/transformed_model.txt" beforeDir="false" afterPath="$PROJECT_DIR$/expts/tmp/transformed_model.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expts/tmp/txt2pcd/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/expts/tmp/txt2pcd/main.cpp" afterDir="false" />
@@ -95,7 +42,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.dragon_expts">
+  <component name="RunManager" selected="Python.showresult">
     <configuration name="dragon_expts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gmmreg" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,8 +106,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="showresult" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gmmreg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/showresult.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.showresult" />
         <item itemvalue="Python.dragon_expts" />
         <item itemvalue="Python.pcd2txt" />
         <item itemvalue="Python.open3Dtest" />
@@ -181,40 +150,40 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1863" height="345" key="GridCell.Tab.0.bottom" timestamp="1603297465709">
+    <state width="1863" height="345" key="GridCell.Tab.0.bottom" timestamp="1603370052346">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1863" height="374" key="GridCell.Tab.0.bottom/1920.0.1920.1080/3840.0.1920.1080/57.24.1863.1056@1920.0.1920.1080" timestamp="1601376401093" />
     <state width="1863" height="303" key="GridCell.Tab.0.bottom/1920.0.1920.1080/3840.0.1920.1080/57.24.1863.1056@3840.0.1920.1080" timestamp="1601359579757" />
     <state width="1863" height="373" key="GridCell.Tab.0.bottom/1920.0.1920.1080/3840.0.1920.1080/57.24.1863.1056@57.24.1863.1056" timestamp="1602151297332" />
-    <state width="1863" height="345" key="GridCell.Tab.0.bottom/57.24.1863.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603297465709" />
+    <state width="1863" height="345" key="GridCell.Tab.0.bottom/57.24.1863.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603370052346" />
     <state width="1863" height="345" key="GridCell.Tab.0.bottom/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1603231785775" />
     <state width="1863" height="373" key="GridCell.Tab.0.bottom/57.24.1863.1056@57.24.1863.1056" timestamp="1601486005960" />
-    <state width="1863" height="345" key="GridCell.Tab.0.center" timestamp="1603297465708">
+    <state width="1863" height="345" key="GridCell.Tab.0.center" timestamp="1603370052346">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1863" height="374" key="GridCell.Tab.0.center/1920.0.1920.1080/3840.0.1920.1080/57.24.1863.1056@1920.0.1920.1080" timestamp="1601376401093" />
     <state width="1863" height="303" key="GridCell.Tab.0.center/1920.0.1920.1080/3840.0.1920.1080/57.24.1863.1056@3840.0.1920.1080" timestamp="1601359579757" />
     <state width="1863" height="373" key="GridCell.Tab.0.center/1920.0.1920.1080/3840.0.1920.1080/57.24.1863.1056@57.24.1863.1056" timestamp="1602151297332" />
-    <state width="1863" height="345" key="GridCell.Tab.0.center/57.24.1863.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603297465708" />
+    <state width="1863" height="345" key="GridCell.Tab.0.center/57.24.1863.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603370052346" />
     <state width="1863" height="345" key="GridCell.Tab.0.center/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1603231785775" />
     <state width="1863" height="373" key="GridCell.Tab.0.center/57.24.1863.1056@57.24.1863.1056" timestamp="1601486005960" />
-    <state width="1863" height="345" key="GridCell.Tab.0.left" timestamp="1603297465708">
+    <state width="1863" height="345" key="GridCell.Tab.0.left" timestamp="1603370052346">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1863" height="374" key="GridCell.Tab.0.left/1920.0.1920.1080/3840.0.1920.1080/57.24.1863.1056@1920.0.1920.1080" timestamp="1601376401093" />
     <state width="1863" height="303" key="GridCell.Tab.0.left/1920.0.1920.1080/3840.0.1920.1080/57.24.1863.1056@3840.0.1920.1080" timestamp="1601359579757" />
     <state width="1863" height="373" key="GridCell.Tab.0.left/1920.0.1920.1080/3840.0.1920.1080/57.24.1863.1056@57.24.1863.1056" timestamp="1602151297331" />
-    <state width="1863" height="345" key="GridCell.Tab.0.left/57.24.1863.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603297465708" />
+    <state width="1863" height="345" key="GridCell.Tab.0.left/57.24.1863.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603370052346" />
     <state width="1863" height="345" key="GridCell.Tab.0.left/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1603231785775" />
     <state width="1863" height="373" key="GridCell.Tab.0.left/57.24.1863.1056@57.24.1863.1056" timestamp="1601486005960" />
-    <state width="1863" height="345" key="GridCell.Tab.0.right" timestamp="1603297465709">
+    <state width="1863" height="345" key="GridCell.Tab.0.right" timestamp="1603370052346">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1863" height="374" key="GridCell.Tab.0.right/1920.0.1920.1080/3840.0.1920.1080/57.24.1863.1056@1920.0.1920.1080" timestamp="1601376401093" />
     <state width="1863" height="303" key="GridCell.Tab.0.right/1920.0.1920.1080/3840.0.1920.1080/57.24.1863.1056@3840.0.1920.1080" timestamp="1601359579757" />
     <state width="1863" height="373" key="GridCell.Tab.0.right/1920.0.1920.1080/3840.0.1920.1080/57.24.1863.1056@57.24.1863.1056" timestamp="1602151297332" />
-    <state width="1863" height="345" key="GridCell.Tab.0.right/57.24.1863.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603297465709" />
+    <state width="1863" height="345" key="GridCell.Tab.0.right/57.24.1863.1056/1920.0.1920.1080@1920.0.1920.1080" timestamp="1603370052346" />
     <state width="1863" height="345" key="GridCell.Tab.0.right/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1603231785775" />
     <state width="1863" height="373" key="GridCell.Tab.0.right/57.24.1863.1056@57.24.1863.1056" timestamp="1601486005960" />
     <state width="1863" height="374" key="GridCell.Tab.1.bottom" timestamp="1602500602036">

@@ -22,7 +22,7 @@ int main(int argc,char** argv)
 	FILE *fp_txt;
 	TXT_Point_XYZ txt_points;
 	vector<TXT_Point_XYZ> my_vTxtPoints;
-	fp_txt = fopen("transformed_model.txt","r");
+	fp_txt = fopen("/home/zhangeaky/gmmreg/expts/tmp/transformed_model.txt","r");
  
 	if (fp_txt)
 	{

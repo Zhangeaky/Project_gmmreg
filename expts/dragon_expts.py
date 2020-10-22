@@ -9,10 +9,10 @@ This Python script can be used to test the gmmreg algorithm on the Stanford
 import os, subprocess, time
 import numpy as np
 
-from common_utils import *
+from .common_utils import *
 
 # https://github.com/bistromath/gr-air-modes/blob/master/python/Quaternion.py
-from Quaternion import Quat, normalize
+from .Quaternion import Quat, normalize
 
 
 DATA_PATH = '../data/dragon_stand'
@@ -130,16 +130,14 @@ def visualize_registration(i, j):
         from open3d.visualization import draw_geometries
     except:
         from open3d import PointCloud, Vector3dVector, draw_geometries
-    print("hello")
+
     model_ply = PLY_FILES[i]
     scene_ply = PLY_FILES[j]
     model_txt = ply2txt(model_ply)
     scene_txt = ply2txt(scene_ply)
     model = np.loadtxt(model_txt)
     scene = np.loadtxt(scene_txt)
-    print("tpye_model :", type(model), "type_scence: ", type(scene))
 
-    print("fileUrl:",model_txt, scene_txt)#文件路径
     pcloud_model = PointCloud()
     pcloud_model.points = Vector3dVector(model)
     pcloud_model.paint_uniform_color([1, 0, 0]) # red
@@ -152,7 +150,6 @@ def visualize_registration(i, j):
 
     res = run_rigid_pairwise(BINARY_FULLPATH, model, scene, CONFIG_FILE)
 
-    print("bp", BINARY_FULLPATH)
     # BINARY_FULLPATH:
     # ../C++/build/gmmreg_demo
 
@@ -173,8 +170,10 @@ if __name__ == "__main__":
     try:
         print("visualization")
         import open3d
-        visualize_registration(19, 20)
-        print("-----")
+
+        #for i in range(1,10):
+        visualize_registration(1,0)
+        #print("-----")
     except:
         pass
     # Run registration on many more specified pairs and collect metrics.

@@ -15,7 +15,7 @@ int main (int argc, char** argv)
 
    
    
-    pcl::io::savePCDFileASCII ("res.pcd", *ptr3); 
+    pcl::io::savePCDFileASCII ("sum.pcd", *ptr3); 
     cout << "Generating "<<endl;
   
 
